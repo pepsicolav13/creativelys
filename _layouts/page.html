@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<!-- begin page -->
+<div class="container">
+
+  <div class="page-head">
+    <div class="page-meta">
+      <h1 class="page-title">{{ page.title | escape }}</h1>
+      {% if page.description %}
+        <p class="page-description">{{ page.description }}</p>
+      {% endif %}
+    </div>
+  </div>
+
+  {%if page.image %}
+    <div class="page-image">
+      <img class="lazy" data-src="{{ site.baseurl }}{{ page.image }}" alt="{{ page.title }}">
+    </div>
+  {% endif %}
+
+  <article class="page">
+    <div class="page__content">
+      {{ content }}
+    </div>
+  </article>
+
+</div>
+<!-- end page -->
+
+{% include section-gallery.html %}

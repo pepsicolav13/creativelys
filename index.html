@@ -1,20 +1,18 @@
-<html>
-  <head>
-    <title>Href Attribute Example</title>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-H3NV8MZB5K"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+---
+layout: default
+image: '/images/01.jpg'
+---
 
-  gtag('config', 'G-H3NV8MZB5K');
-</script>
-  </head>
-  <body>
-    <h1>Href Attribute Example</h1>
-    <p>
-      <a href="https://www.freecodecamp.org/contribute/">The freeCodeCamp Contribution Page</a> shows you how and where you can contribute to freeCodeCamp's community and growth.
-    </p>
-  </body>
-</html>
+{% include section-hero.html %}
+
+{% include section-projects.html %}
+
+{% include section-testimonials.html %}
+
+{% include section-blog.html %}
+
+{% include section-author.html %}
+
+{% include section-tags.html %}
+
+{% include section-gallery.html %}
